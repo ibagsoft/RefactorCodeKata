@@ -25,8 +25,8 @@ public class Trainer {
         String result = "Subscription Record for " + getName() + "\n";
 
         for (Training each : trainings) {
-            double thisAmount = 0;
             //determine amounts for each line
+            double thisAmount = 0;
             switch (each.getCourse().getPriceCode()) {
                 case Course.ENTERPRISE:
                     if (each.getTraineeCount() > 15)
